@@ -14,5 +14,6 @@ int	main(void)
 	printf("c0 ft_isascii return : %d\n", ft_isascii(c0));
 	printf("c1 ft_isdigit return : %d\n", ft_isascii(c1));
 	printf("c2 ft_isprint return : %d\n", ft_isprint(c2));
+	printf("c2 ft_isalnum return : %d\n", ft_isalnum(c1));
 	return (0);
 }
