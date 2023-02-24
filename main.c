@@ -1,5 +1,6 @@
 #include "libft.h"
 #include <stdio.h>
+#include <limits.h>
 
 int	main(void)
 {
@@ -21,5 +22,13 @@ int	main(void)
 	printf("str0 : %ld caracters\n", ft_strlen(str0));
 	ft_putchar_fd('\n', 1);
 	ft_putstr_fd(str0, 1);
+	ft_putchar_fd('\n', 1);
+	ft_putnbr_fd(-2147483647, 1);
+	ft_putchar_fd('\n', 1);
+	ft_putnbr_fd(2147483647, 1);
+	ft_putchar_fd('\n', 1);
+	ft_putnbr_fd(0, 1);
+	ft_putchar_fd('\n', 1);
+	ft_putnbr_fd(42, 1);
 	return (0);
 }
