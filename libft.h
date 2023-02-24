@@ -1,6 +1,9 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-int		ft_atoi(const char *str);
+#include <unistd.h>
+
+int	ft_atoi(const char *str);
+int	ft_isalpha(int c);
 
 #endif

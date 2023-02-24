@@ -1,6 +1,6 @@
 NAME = libft.a
 
-SRCS = ft_atoi.c
+SRCS = ft_atoi.c ft_isalpha.c
 
 OBJS = ${SRCS:.c=.o}
 
