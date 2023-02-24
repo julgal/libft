@@ -1,7 +1,7 @@
 NAME = libft.a
 
 SRCS = ft_atoi.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
-	ft_isalnum.c ft_putchar_fd.c ft_strlen.c
+	ft_isalnum.c ft_putchar_fd.c ft_strlen.c ft_putstr_fd.c
 
 OBJS = ${SRCS:.c=.o}
 

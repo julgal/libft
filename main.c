@@ -19,5 +19,7 @@ int	main(void)
 	printf("c2 ft_isalnum return : %d\n", ft_isalnum(c1));
 	ft_putchar_fd(c1, 1);
 	printf("str0 : %ld caracters\n", ft_strlen(str0));
+	ft_putchar_fd('\n', 1);
+	ft_putstr_fd(str0, 1);
 	return (0);
 }
