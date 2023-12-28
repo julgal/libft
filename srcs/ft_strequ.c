@@ -1,4 +1,4 @@
-#include "../include/libft.h"
+#include "../includes/libft.h"
 
 /*
  * Lexicographical comparison between s1 and s2. If the 2 strings are identical
