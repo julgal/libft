@@ -2,7 +2,7 @@
 # define LIBFT_H
 
 /*
- * Header files dependencie.s
+ * Header files dependencies
 */
 
 # include <errno.h>
@@ -29,6 +29,7 @@ char		*ft_strcpy(char *dst, const char *src);
 char		*ft_strncpy(char *dst, const char *src, size_t n);
 char		*ft_strstr(const char *big, const char *little);
 char		*ft_strnstr(const char *big, const char *little, size_t n);
+char		*ft_strdup(const char *s1);
 size_t		ft_strlen(const char *str);
 
 #endif
