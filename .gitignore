@@ -1,3 +1,2 @@
 srcs/main.c
-srcs/*.o
 srcs/App
