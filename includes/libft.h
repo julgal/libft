@@ -30,6 +30,7 @@ char		*ft_strncpy(char *dst, const char *src, size_t n);
 char		*ft_strstr(const char *big, const char *little);
 char		*ft_strnstr(const char *big, const char *little, size_t n);
 char		*ft_strdup(const char *s1);
+char		*ft_strnew(size_t size);
 size_t		ft_strlen(const char *str);
 
 #endif
