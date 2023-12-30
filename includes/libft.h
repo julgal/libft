@@ -47,5 +47,7 @@ int		ft_isblank(int c);
 int		ft_isdigit(int c);
 int		ft_iscntrl(int c);
 int		ft_isgraph(int c);
+int		ft_islower(int c);
+int		ft_isupper(int c);
 
 #endif
