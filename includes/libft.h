@@ -36,4 +36,11 @@ char		*ft_strmap(const char *s, char (*f)(char));
 char		*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 size_t		ft_strlen(const char *str);
 
+/*
+ * Functions by type ctype.h
+*/
+
+int		ft_isascii(int c);
+int		ft_isalnum(int c);
+
 #endif
