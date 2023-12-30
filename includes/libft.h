@@ -32,6 +32,7 @@ char		*ft_strnstr(const char *big, const char *little, size_t n);
 char		*ft_strdup(const char *s1);
 char		*ft_strnew(size_t size);
 char		*ft_strjoin(char const *s1, char const *s2);
+char		*ft_strmap(const char *s, char (*f)(char));
 size_t		ft_strlen(const char *str);
 
 #endif
