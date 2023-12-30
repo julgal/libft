@@ -45,5 +45,7 @@ int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isblank(int c);
 int		ft_isdigit(int c);
+int		ft_iscntrl(int c);
+int		ft_isgraph(int c);
 
 #endif
