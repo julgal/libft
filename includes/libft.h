@@ -67,6 +67,7 @@ int		ft_isupper(int c);
 int		ft_isspace(int c);
 int		ft_isprint(int c);
 int		ft_str_is_lowercase(char *str);
+int		ft_str_is_uppercase(char *str);
 
 /*
  * Functions by type stdio.h
