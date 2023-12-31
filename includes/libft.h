@@ -68,6 +68,7 @@ int		ft_isspace(int c);
 int		ft_isprint(int c);
 int		ft_str_is_lowercase(char *str);
 int		ft_str_is_uppercase(char *str);
+int		ft_str_is_numeric(char *src);
 
 /*
  * Functions by type stdio.h
