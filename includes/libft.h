@@ -16,7 +16,14 @@
  * Macros for the limits of the variables
 */
 
+# define CHAR_BIT	(8)
+# define MB_LEN_MAX	(1)
+# define CHAR_MIN	(-128)
+# define CHAR_MAX	(127)
 # define INT_MIN	(-2147483648)
+# define INT_MAX	(2147483647)
+# define LONG_MIN	(-9223372036854775808)
+# define LONG_MAX	(9223372036854775807)
 
 /*
  * Functions by type string.h
