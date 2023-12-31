@@ -48,6 +48,7 @@ char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strmap(const char *s, char (*f)(char));
 char		*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 size_t		ft_strlen(const char *str);
+size_t		ft_strlcat(char *dst, const char *src, size_t size);
 
 /*
  * Functions by type ctype.h
