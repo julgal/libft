@@ -13,6 +13,12 @@
 # include <sys/types.h>
 
 /*
+ * Macros for the limits of the variables
+*/
+
+# define INT_MIN	(-2147483648)
+
+/*
  * Functions by type string.h
 */
 
@@ -58,5 +64,6 @@ int		ft_isprint(int c);
 
 void		ft_putchar(char c);
 void		ft_putstr(const char *s);
+void		ft_putnbr(int n);
 
 #endif
