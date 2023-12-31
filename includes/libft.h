@@ -52,4 +52,11 @@ int		ft_isupper(int c);
 int		ft_isspace(int c);
 int		ft_isprint(int c);
 
+/*
+ * Functions by type stdio.h
+*/
+
+void		ft_putchar(char c);
+void		ft_putstr(const char *s);
+
 #endif
