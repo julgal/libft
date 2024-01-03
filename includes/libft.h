@@ -88,6 +88,7 @@ void		ft_putnbr(int n);
 
 int	ft_min(int x, int y);
 int	ft_max(int x, int y);
+int	ft_isprime(long unsigned int nbr);
 
 
 #endif
