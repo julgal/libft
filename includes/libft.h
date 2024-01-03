@@ -90,5 +90,6 @@ int		ft_min(int x, int y);
 int		ft_max(int x, int y);
 int		ft_isprime(long unsigned int nbr);
 double		ft_sqrt(double x);
+size_t		ft_fibonacci(unsigned int index);
 
 #endif
