@@ -86,9 +86,9 @@ void		ft_putnbr(int n);
  * Functions by type math.h
 */
 
-int	ft_min(int x, int y);
-int	ft_max(int x, int y);
-int	ft_isprime(long unsigned int nbr);
-
+int		ft_min(int x, int y);
+int		ft_max(int x, int y);
+int		ft_isprime(long unsigned int nbr);
+double		ft_sqrt(double x);
 
 #endif
