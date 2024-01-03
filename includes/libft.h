@@ -82,4 +82,12 @@ void		ft_putstr(const char *s);
 void		ft_putstr_fd(char const *s, int fd);
 void		ft_putnbr(int n);
 
+/*
+ * Functions by type math.h
+*/
+
+int	ft_min(int x, int y);
+int	ft_max(int x, int y);
+
+
 #endif
