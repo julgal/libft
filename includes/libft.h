@@ -71,6 +71,7 @@ int		ft_isprint(int c);
 int		ft_str_is_lowercase(char *str);
 int		ft_str_is_uppercase(char *str);
 int		ft_str_is_numeric(char *src);
+int		ft_str_is_printable(char *str);
 
 /*
  * Functions by type stdio.h
