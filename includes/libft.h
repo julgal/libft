@@ -93,7 +93,9 @@ double		ft_sqrt(double x);
 double		ft_round(double x);
 double		ft_pow(double x, int y);
 double		ft_ceil(double x);
+double		ft_trunc(double x);
+double		ft_truncl(double x);
 size_t		ft_fibonacci(unsigned int index);
-size_t		ft_factorial(unsigned int nb);
+size_t		ft_factorial(unsigned int nbr);
 
 #endif
