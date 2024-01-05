@@ -26,6 +26,12 @@
 # define LONG_MAX	(9223372036854775807)
 
 /*
+ * Functions by type stdlib.h
+*/
+
+int		ft_atoi(const char *str);
+
+/*
  * Functions by type string.h
 */
 
