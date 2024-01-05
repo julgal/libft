@@ -85,9 +85,11 @@ int		ft_str_is_printable(char *str);
 */
 
 void		ft_putchar(char c);
+void		ft_putchar_fd(char c, int fd);
 void		ft_putstr(const char *s);
 void		ft_putstr_fd(char const *s, int fd);
 void		ft_putnbr(int n);
+void		ft_putnbr_fd(int n, int fd);
 
 /*
  * Functions by type math.h
