@@ -113,5 +113,6 @@ size_t		ft_factorial(unsigned int nbr);
 */
 
 size_t		ft_wordcount(const char *s, char c);
+size_t		ft_wordlen(const char *s, char c);
 
 #endif
