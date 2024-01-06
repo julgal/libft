@@ -108,4 +108,10 @@ double		ft_truncl(double x);
 size_t		ft_fibonacci(unsigned int index);
 size_t		ft_factorial(unsigned int nbr);
 
+/*
+ * Miscellaneous functions
+*/
+
+size_t		ft_wordcount(const char *s, char c);
+
 #endif
