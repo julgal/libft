@@ -53,6 +53,7 @@ char		*ft_strnew(size_t size);
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strmap(const char *s, char (*f)(char));
 char		*ft_strmapi(const char *s, char (*f)(unsigned int, char));
+char		**ft_strsplit(char const *s, char c);
 void		*ft_memcpy(void *dst, const void *src, size_t n);
 void		*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void		*ft_memchr(const void *s, int c, size_t n);

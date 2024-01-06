@@ -1,6 +1,6 @@
 #include "../includes/libft.h"
 
-size_t	ft_wordcouunt(const char *s, char c)
+size_t	ft_wordcount(const char *s, char c)
 {
 	size_t	i;
 	size_t	w;
