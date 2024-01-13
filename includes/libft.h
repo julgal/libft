@@ -30,6 +30,7 @@
 */
 
 int		ft_atoi(const char *str);
+char		*ft_itoa(int n);
 
 /*
  * Functions by type string.h
@@ -106,6 +107,7 @@ double		ft_ceil(double x);
 double		ft_floor(double x);
 double		ft_trunc(double x);
 double		ft_truncl(double x);
+size_t		ft_nbrlen(int nbr, int base);
 size_t		ft_fibonacci(unsigned int index);
 size_t		ft_factorial(unsigned int nbr);
 
