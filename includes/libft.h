@@ -112,6 +112,12 @@ size_t		ft_fibonacci(unsigned int index);
 size_t		ft_factorial(unsigned int nbr);
 
 /*
+ * Functions by type array.h
+*/
+
+int		ft_arr_max(int *arr, int lenght);
+
+/*
  * Miscellaneous functions
 */
 
