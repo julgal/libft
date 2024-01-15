@@ -116,11 +116,13 @@ size_t		ft_factorial(unsigned int nbr);
 */
 
 int		ft_arr_max(int *arr, int lenght);
+int		*ft_arr_new(size_t size);
 
 /*
  * Miscellaneous functions
 */
 
+void		ft_swap(int *a, int *b);
 size_t		ft_wordcount(const char *s, char c);
 size_t		ft_wordlen(const char *s, char c);
 
