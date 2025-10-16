@@ -2,6 +2,7 @@
 # define LIBFT_H
 
 int ft_toupper(int c);
+int ft_tolower(int c);
 
 
 #endif
