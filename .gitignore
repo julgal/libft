@@ -1,1 +1,6 @@
 test_lib
+libft.a
+*.o
+test_*
+.swp
+.log
