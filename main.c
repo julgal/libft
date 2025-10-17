@@ -76,5 +76,17 @@ int	main(void)
 			printf("%c", str_01[i]);
 	}
 	printf("\n\n");
+
+	printf("=== TEST FT_MEMCPY ===\n");
+    char src_02[] = "Hello";
+	char dest_00[10];
+
+	ft_memcpy(dest_00, src_02, 6); // copie aussi le '\0'
+	printf("Résultat : %s\n", dest_00);
+
+	// Test avec n = 0
+	ft_memcpy(dest_00, "Test", 0);
+	printf("Aucun changement (n=0) : %s\n", dest_00);
+
 	return (0);
 }
