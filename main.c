@@ -17,7 +17,13 @@ int	main(void)
     printf("ft_isalpha('A') = %d\n", ft_isalpha('A'));
 	printf("ft_isalpha('z') = %d\n", ft_isalpha('z'));
 	printf("ft_isalpha('5') = %d\n", ft_isalpha('5'));
-	printf("ft_isalpha('-') = %d\n", ft_isalpha('-'));
+	printf("ft_isalpha('-') = %d\n\n", ft_isalpha('-'));
+
+	printf("=== TEST FT_ISDIGIT ===\n");
+    printf("ft_isdigit('0') = %d\n", ft_isdigit('0')); // 1
+	printf("ft_isdigit('9') = %d\n", ft_isdigit('9')); // 1
+	printf("ft_isdigit('A') = %d\n", ft_isdigit('A')); // 0
+	printf("ft_isdigit('-') = %d\n\n", ft_isdigit('-')); // 0
 
 	return (0);
 }
