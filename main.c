@@ -25,5 +25,12 @@ int	main(void)
 	printf("ft_isdigit('A') = %d\n", ft_isdigit('A')); // 0
 	printf("ft_isdigit('-') = %d\n\n", ft_isdigit('-')); // 0
 
+	printf("=== TEST FT_ISALNUM ===\n");
+    printf("ft_isalnum('A') = %d\n", ft_isalnum('A')); // 1
+	printf("ft_isalnum('z') = %d\n", ft_isalnum('z')); // 1
+	printf("ft_isalnum('5') = %d\n", ft_isalnum('5')); // 1
+	printf("ft_isalnum('-') = %d\n", ft_isalnum('-')); // 0
+	printf("ft_isalnum(' ') = %d\n\n", ft_isalnum(' ')); // 0
+
 	return (0);
 }
