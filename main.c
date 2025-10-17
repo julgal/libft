@@ -86,7 +86,7 @@ int	main(void)
 
 	// Test avec n = 0
 	ft_memcpy(dest_00, "Test", 0);
-	printf("Aucun changement (n=0) : %s\n", dest_00);
+	printf("Aucun changement (n=0) : %s\n\n", dest_00);
 
 	printf("=== TEST FT_MEMMOVE ===\n");
     char str_03[20] = "HelloWorld";
@@ -96,10 +96,22 @@ int	main(void)
 	printf("Résultat (chevauchement) : %s\n", str_03);
 
 	// Cas sans chevauchement
-	char src[] = "12345";
-	char dest[10];
-	ft_memmove(dest, src, 6);
-	printf("Copie simple : %s\n", dest);
+	char src_04[] = "12345";
+	char dest_01[10];
+	ft_memmove(dest_01, src_04, 6);
+	printf("Copie simple : %s\n\n", dest_01);
+
+	printf("=== TEST FT_STRLCPY ===\n");
+    char src_05[] = "Bonjour";
+	char dest_05[10];
+	size_t ret;
+
+	ret = ft_strlcpy(dest_05, src_05, sizeof(dest_05));
+	printf("Dest : \"%s\" | Retour : %zu\n", dest_05, ret);
+
+	char small_dest[4];
+	ret = ft_strlcpy(small_dest, src_05, sizeof(small_dest));
+	printf("Tronqué : \"%s\" | Retour : %zu\n\n", small_dest, ret);
 
 	return (0);
 }
