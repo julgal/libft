@@ -32,5 +32,11 @@ int	main(void)
 	printf("ft_isalnum('-') = %d\n", ft_isalnum('-')); // 0
 	printf("ft_isalnum(' ') = %d\n\n", ft_isalnum(' ')); // 0
 
+	printf("=== TEST FT_ISASCII ===\n");
+    printf("ft_isascii(65) = %d\n", ft_isascii(65));   // 1 ('A')
+	printf("ft_isascii(127) = %d\n", ft_isascii(127)); // 1 (DEL)
+	printf("ft_isascii(-1) = %d\n", ft_isascii(-1));   // 0
+	printf("ft_isascii(200) = %d\n\n", ft_isascii(200)); // 0
+
 	return (0);
 }
