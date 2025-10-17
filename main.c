@@ -45,5 +45,10 @@ int	main(void)
 	printf("ft_isprint('\\n') = %d\n", ft_isprint('\n')); // 0
 	printf("ft_isprint(127) = %d\n\n", ft_isprint(127));   // 0
 
+	printf("=== TEST FT_STRLEN ===\n");
+    printf("ft_strlen(\"Hello\") = %zu\n", ft_strlen("Hello")); // 5
+	printf("ft_strlen(\"\") = %zu\n", ft_strlen(""));           // 0
+	printf("ft_strlen(\"42\") = %zu\n", ft_strlen("42"));       // 2
+	printf("ft_strlen(\"libft\") = %zu\n\n", ft_strlen("libft")); // 5
 	return (0);
 }
