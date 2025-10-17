@@ -113,5 +113,18 @@ int	main(void)
 	ret = ft_strlcpy(small_dest, src_05, sizeof(small_dest));
 	printf("Tronqué : \"%s\" | Retour : %zu\n\n", small_dest, ret);
 
+
+	printf("=== TEST FT_STRLCAT ===\n");
+    char dest_06[15] = "Hello";
+	const char *src_06 = " World!";
+	size_t ret_06;
+
+	ret_06 = ft_strlcat(dest_06, src_06, sizeof(dest_06));
+	printf("Résultat : \"%s\" | Retour : %zu\n", dest_06, ret_06);
+
+	char small_dest_06[8] = "Hello";
+	ret_06 = ft_strlcat(small_dest_06, src_06, sizeof(small_dest_06));
+	printf("Tronqué : \"%s\" | Retour : %zu\n\n", small_dest_06, ret_06);
+
 	return (0);
 }
