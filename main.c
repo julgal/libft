@@ -88,5 +88,18 @@ int	main(void)
 	ft_memcpy(dest_00, "Test", 0);
 	printf("Aucun changement (n=0) : %s\n", dest_00);
 
+	printf("=== TEST FT_MEMMOVE ===\n");
+    char str_03[20] = "HelloWorld";
+
+	// Cas normal
+	ft_memmove(str_03 + 5, str_03, 5);
+	printf("Résultat (chevauchement) : %s\n", str_03);
+
+	// Cas sans chevauchement
+	char src[] = "12345";
+	char dest[10];
+	ft_memmove(dest, src, 6);
+	printf("Copie simple : %s\n", dest);
+
 	return (0);
 }
