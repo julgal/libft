@@ -52,14 +52,29 @@ int	main(void)
 	printf("ft_strlen(\"libft\") = %zu\n\n", ft_strlen("libft")); // 5
 
 	printf("=== TEST FT_MEMSET ===\n");
-    char str[10] = "abcdefghi";
+    char str_00[10] = "abcdefghi";
 
-	printf("Avant memset : %s\n", str);
-	ft_memset(str + 3, '*', 3);
-	printf("Après memset : %s\n", str);
+	printf("Avant memset : %s\n", str_00);
+	ft_memset(str_00 + 3, '*', 3);
+	printf("Après memset : %s\n", str_00);
 
 	// Test pour remplir tout à 0
-	ft_memset(str, 0, 10);
-	printf("Après memset à 0 : \"%s\"\n\n", str);
+	ft_memset(str_00, 0, 10);
+	printf("Après memset à 0 : \"%s\"\n\n", str_00);
+
+	printf("=== TEST FT_BZERO ===\n");
+    char str_01[10] = "123456789";
+
+	printf("Avant ft_bzero : \"%s\"\n", str_01);
+	ft_bzero(str_01 + 3, 4);
+	printf("Après ft_bzero : ");
+	for (int i = 0; i < 10; i++)
+	{
+		if (str_01[i] == 0)
+			printf("\\0");
+		else
+			printf("%c", str_01[i]);
+	}
+	printf("\n\n");
 	return (0);
 }
