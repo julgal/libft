@@ -38,5 +38,12 @@ int	main(void)
 	printf("ft_isascii(-1) = %d\n", ft_isascii(-1));   // 0
 	printf("ft_isascii(200) = %d\n\n", ft_isascii(200)); // 0
 
+	printf("=== TEST FT_ISPRINT ===\n");
+    printf("ft_isprint('A') = %d\n", ft_isprint('A'));   // 1
+	printf("ft_isprint(' ') = %d\n", ft_isprint(' '));   // 1
+	printf("ft_isprint('~') = %d\n", ft_isprint('~'));   // 1
+	printf("ft_isprint('\\n') = %d\n", ft_isprint('\n')); // 0
+	printf("ft_isprint(127) = %d\n\n", ft_isprint(127));   // 0
+
 	return (0);
 }
