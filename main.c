@@ -50,5 +50,16 @@ int	main(void)
 	printf("ft_strlen(\"\") = %zu\n", ft_strlen(""));           // 0
 	printf("ft_strlen(\"42\") = %zu\n", ft_strlen("42"));       // 2
 	printf("ft_strlen(\"libft\") = %zu\n\n", ft_strlen("libft")); // 5
+
+	printf("=== TEST FT_MEMSET ===\n");
+    char str[10] = "abcdefghi";
+
+	printf("Avant memset : %s\n", str);
+	ft_memset(str + 3, '*', 3);
+	printf("Après memset : %s\n", str);
+
+	// Test pour remplir tout à 0
+	ft_memset(str, 0, 10);
+	printf("Après memset à 0 : \"%s\"\n\n", str);
 	return (0);
 }
