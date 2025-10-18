@@ -139,5 +139,11 @@ int	main(void)
 	printf("%d\n", ft_strncmp("abc", "abd", 3));     // → négatif
 	printf("%d\n\n", ft_strncmp("abcd", "abc", 4));    // → positif
 
+	printf("=== TEST FT_STRRCHR ===\n");
+    char str_08[] = "Hello World!";
+    printf("%s\n", ft_strrchr(str_08, 'l'));   // → "ld!"
+	printf("%s\n", ft_strrchr(str_08, 'o'));   // → "orld!"
+	printf("%p\n\n", (void *)ft_strrchr(str_08, '\0')); // → adresse fin chaîne
+
 	return (0);
 }
