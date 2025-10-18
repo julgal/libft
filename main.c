@@ -130,7 +130,14 @@ int	main(void)
     char str_07[] = "Hello World!";
 
 	printf("%s\n", ft_strchr(str_07, 'W'));   // → "World!"
-	printf("%s\n", ft_strchr(str_07, 'l'));   // → "llo World!"
+	printf("%s\n\n", ft_strchr(str_07, 'l'));   // → "llo World!"
+
+	printf("=== TEST FT_STRNCMP ===\n");
+    printf("%d\n", ft_strncmp("Hello", "Hello", 5)); // → 0
+	printf("%d\n", ft_strncmp("Hello", "Hellz", 5)); // → négatif
+	printf("%d\n", ft_strncmp("Hello", "Hellz", 4)); // → 0
+	printf("%d\n", ft_strncmp("abc", "abd", 3));     // → négatif
+	printf("%d\n\n", ft_strncmp("abcd", "abc", 4));    // → positif
 
 	return (0);
 }
