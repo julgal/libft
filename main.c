@@ -126,5 +126,11 @@ int	main(void)
 	ret_06 = ft_strlcat(small_dest_06, src_06, sizeof(small_dest_06));
 	printf("Tronqué : \"%s\" | Retour : %zu\n\n", small_dest_06, ret_06);
 
+	printf("=== TEST FT_STRCHR ===\n");
+    char str_07[] = "Hello World!";
+
+	printf("%s\n", ft_strchr(str_07, 'W'));   // → "World!"
+	printf("%s\n", ft_strchr(str_07, 'l'));   // → "llo World!"
+
 	return (0);
 }
