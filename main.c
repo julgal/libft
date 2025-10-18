@@ -1,24 +1,17 @@
 #include <stdio.h>
-#include <string.h>
 
-void	*ft_memchr(const void *s, int c, size_t n);
+int	ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int	main(void)
 {
-	char data[] = "Hello World!";
-	void *result;
+	char a[] = "Hello";
+	char b[] = "Hello";
+	char c[] = "Hellz";
 
-	// Cherche 'o'
-	result = ft_memchr(data, 'o', 12);
-	printf("%s\n", (char *)result);  // → "o World!"
-
-	// Cherche 'z' (non présent)
-	result = ft_memchr(data, 'z', 12);
-	printf("%s\n", result ? (char *)result : "(null)");  // → "(null)"
-
-	// Cherche '\0'
-	result = ft_memchr(data, '\0', 12);
-	printf("%s\n", (char *)result);  // → "" (chaîne vide à partir du '\0')
+	printf("%d\n", ft_memcmp(a, b, 5)); // → 0 (identiques)
+	printf("%d\n", ft_memcmp(a, c, 5)); // → négatif ('o' - 'z' = -14)
+	printf("%d\n", ft_memcmp(c, a, 5)); // → positif ('z' - 'o' = 14)
+	printf("%d\n", ft_memcmp(a, c, 4)); // → 0 (les 4 premiers caractères identiques)
 
 	return 0;
 }
