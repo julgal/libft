@@ -2,9 +2,17 @@
 
 int main(void)
 {
-    printf("%d\n", ft_atoi("42"));           // 42
-    printf("%d\n", ft_atoi("   -1234"));     // -1234
-    printf("%d\n", ft_atoi(NULL));           // 0, pas de segfault
-    printf("%d\n", ft_atoi("abc"));          // 0
-    return 0;
+	int *tab;
+	size_t n = 5;
+
+	tab = (int *)ft_calloc(n, sizeof(int));
+	if (!tab)
+		return (1);
+
+	for (size_t i = 0; i < n; i++)
+		printf("tab[%zu] = %d\n", i, tab[i]);
+
+	free(tab);
+	return (0);
 }
+
