@@ -1,17 +1,10 @@
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
-
-int	main(void)
+int main(void)
 {
-	char a[] = "Hello";
-	char b[] = "Hello";
-	char c[] = "Hellz";
-
-	printf("%d\n", ft_memcmp(a, b, 5)); // → 0 (identiques)
-	printf("%d\n", ft_memcmp(a, c, 5)); // → négatif ('o' - 'z' = -14)
-	printf("%d\n", ft_memcmp(c, a, 5)); // → positif ('z' - 'o' = 14)
-	printf("%d\n", ft_memcmp(a, c, 4)); // → 0 (les 4 premiers caractères identiques)
-
-	return 0;
+    printf("%d\n", ft_atoi("42"));           // 42
+    printf("%d\n", ft_atoi("   -1234"));     // -1234
+    printf("%d\n", ft_atoi(NULL));           // 0, pas de segfault
+    printf("%d\n", ft_atoi("abc"));          // 0
+    return 0;
 }
