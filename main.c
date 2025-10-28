@@ -1,18 +1,24 @@
 #include "libft.h"
 
-int main(void)
+int	main(void)
 {
-	int *tab;
-	size_t n = 5;
+	char	*src = "Bonjour 42 !";
+	char	*copy;
 
-	tab = (int *)ft_calloc(n, sizeof(int));
-	if (!tab)
+	copy = ft_strdup(src);
+	if (!copy)
+	{
+		printf("Erreur : échec de l'allocation mémoire\n");
 		return (1);
+	}
+	printf("Chaîne originale : %s\n", src);
+	printf("Copie obtenue    : %s\n", copy);
 
-	for (size_t i = 0; i < n; i++)
-		printf("tab[%zu] = %d\n", i, tab[i]);
+	if (copy != src)
+		printf("Copie effectuée dans un nouvel espace mémoire.\n");
+	else
+		printf("Les deux pointeurs pointent vers la même zone mémoire.\n");
 
-	free(tab);
+	free(copy);
 	return (0);
 }
-
