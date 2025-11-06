@@ -1,34 +1,31 @@
 #include "libft.h"
 
+char	*ft_strjoin(char const *s1, char const *s2);
+
 int main(void)
 {
-    char *s1 = "Hello, world!";
-    char *r;
+	char *res;
 
-    /* cas normal */
-    r = ft_substr(s1, 7, 5);
-    printf("substr(\"%s\", 7, 5) -> \"%s\"\n", s1, r);
-    free(r);
+	res = ft_strjoin("Hello", "World");
+	if (res)
+	{
+		printf("Résultat : %s\n", res);
+		free(res);
+	}
+	else
+		printf("Erreur d'allocation\n");
 
-    /* len trop grand */
-    r = ft_substr(s1, 7, 50);
-    printf("substr(\"%s\", 7, 50) -> \"%s\"\n", s1, r);
-    free(r);
+	res = ft_strjoin("42", "");
+	printf("Résultat : %s\n", res);
+	free(res);
 
-    /* start au-delà de la fin */
-    r = ft_substr(s1, 50, 5);
-    printf("substr(\"%s\", 50, 5) -> \"%s\"\n", s1, r);
-    free(r);
+	res = ft_strjoin("", "School");
+	printf("Résultat : %s\n", res);
+	free(res);
 
-    /* len = 0 */
-    r = ft_substr(s1, 3, 0);
-    printf("substr(\"%s\", 3, 0) -> \"%s\"\n", s1, r);
-    free(r);
+	res = ft_strjoin("", "");
+	printf("Résultat : %s\n", res);
+	free(res);
 
-    /* s == NULL */
-    r = ft_substr(NULL, 0, 5);
-    printf("substr(NULL, 0, 5) -> %s\n", r ? r : "NULL");
-    free(r); /* safe even si r == NULL (free(NULL) est défini) */
-
-    return 0;
+	return (0);
 }
