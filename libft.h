@@ -6,6 +6,7 @@
 # include <stdlib.h>
 # include <stdint.h>
 # include <limits.h>
+# include <string.h>
 
 int ft_toupper(int c);
 int ft_tolower(int c);
@@ -33,5 +34,6 @@ char    *ft_strdup(const char *src);
 char    *ft_strchr(const char *s, int c);
 char    *ft_strrchr(const char *s, int c);
 char    *ft_strnstr(const char *haystack, const char *needle, size_t len);
+char    *ft_substr(const char *s, unsigned int start, size_t len);
 
 #endif
