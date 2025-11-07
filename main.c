@@ -1,31 +1,17 @@
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2);
-
 int main(void)
 {
-	char *res;
-
-	res = ft_strjoin("Hello", "World");
-	if (res)
-	{
-		printf("Résultat : %s\n", res);
-		free(res);
-	}
-	else
-		printf("Erreur d'allocation\n");
-
-	res = ft_strjoin("42", "");
-	printf("Résultat : %s\n", res);
-	free(res);
-
-	res = ft_strjoin("", "School");
-	printf("Résultat : %s\n", res);
-	free(res);
-
-	res = ft_strjoin("", "");
-	printf("Résultat : %s\n", res);
-	free(res);
-
-	return (0);
+    char *s = "  \tHello World \n  ";
+    char *trimmed = ft_strtrim(s, " \n\t");
+    if (trimmed)
+    {
+        printf("Avant: [%s]\n", s);
+        printf("Après: [%s]\n", trimmed);
+        free(trimmed);
+    }
+    else
+        printf("Erreur d'allocation.\n");
+    return 0;
 }
+
