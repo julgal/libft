@@ -2,16 +2,17 @@
 
 int main(void)
 {
-    char *s = "  \tHello World \n  ";
-    char *trimmed = ft_strtrim(s, " \n\t");
-    if (trimmed)
-    {
-        printf("Avant: [%s]\n", s);
-        printf("Après: [%s]\n", trimmed);
-        free(trimmed);
-    }
-    else
-        printf("Erreur d'allocation.\n");
-    return 0;
-}
+    char **tab = ft_split("Salut les amis du 42", ' ');
+    int i = 0;
 
+    if (!tab)
+        return (1);
+    while (tab[i])
+    {
+        printf("mot[%d] = %s\n", i, tab[i]);
+        free(tab[i]);
+        i++;
+    }
+    free(tab);
+    return (0);
+}
