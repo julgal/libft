@@ -30,6 +30,7 @@ void    *ft_memchr(const void *s, int c, size_t n);
 void    *ft_calloc(size_t count, size_t size);
 void    ft_bzero(void *s, size_t n);
 
+char    *ft_itoa(int n);
 char    *ft_strdup(const char *src);
 char    *ft_strchr(const char *s, int c);
 char    *ft_strrchr(const char *s, int c);

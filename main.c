@@ -2,17 +2,17 @@
 
 int main(void)
 {
-    char **tab = ft_split("Salut les amis du 42", ' ');
-    int i = 0;
-
-    if (!tab)
-        return (1);
-    while (tab[i])
+    int values[] = {0, 42, -42, 12345, -2147483648};
+    for (int i = 0; i < 5; i++)
     {
-        printf("mot[%d] = %s\n", i, tab[i]);
-        free(tab[i]);
-        i++;
+        char *s = ft_itoa(values[i]);
+        if (s)
+        {
+            printf("ft_itoa(%d) = %s\n", values[i], s);
+            free(s);
+        }
+        else
+            printf("Erreur d'allocation\n");
     }
-    free(tab);
-    return (0);
+    return 0;
 }
