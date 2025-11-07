@@ -1,18 +1,25 @@
 #include "libft.h"
 
+char to_upper(unsigned int i, char c)
+{
+    (void)i;
+    if (c >= 'a' && c <= 'z')
+        return (c - 32);
+    return (c);
+}
+
 int main(void)
 {
-    int values[] = {0, 42, -42, 12345, -2147483648};
-    for (int i = 0; i < 5; i++)
+    char *s = "hello 42";
+    char *res = ft_strmapi(s, to_upper);
+
+    if (res)
     {
-        char *s = ft_itoa(values[i]);
-        if (s)
-        {
-            printf("ft_itoa(%d) = %s\n", values[i], s);
-            free(s);
-        }
-        else
-            printf("Erreur d'allocation\n");
+        printf("Avant : %s\n", s);
+        printf("Après : %s\n", res);
+        free(res);
     }
-    return 0;
+    else
+        printf("Erreur d'allocation.\n");
+    return (0);
 }
